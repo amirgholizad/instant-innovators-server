@@ -8,7 +8,7 @@ const app = express();
 const CORS_ORIGIN = process.env.CORS_ORIGIN;
 const PORT = process.env.PORT;
 
-app.use(cors({ options: CORS_ORIGIN }));
+app.use(cors({ origin: CORS_ORIGIN }));
 
 app.use(express.json());
 
