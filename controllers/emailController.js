@@ -7,8 +7,6 @@ const api_key = process.env.OPENAI_API_KEY;
 
 async function getAIResponse(req, res) {
   try {
-    console.log(api_key);
-
     const openai = new OpenAI({ apiKey: api_key });
 
     const startTime = performance.now();
